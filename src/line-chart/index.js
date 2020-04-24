@@ -1,3 +1,4 @@
 import LineChart from "./line-chart";
+import LineChartWithTooltips from "./line-charts-with-tooltips";
 
-export default LineChart;
+export {LineChart, LineChartWithTooltips};

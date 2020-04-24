@@ -41,9 +41,12 @@ class AbstractChart extends Component {
 
   getPropsForBackgroundLines() {
     const { propsForBackgroundLines = {} } = this.props.chartConfig;
+    const {dashedLine} = propsForBackgroundLines;
+    const line = dashedLine ? {strokeDasharray: "5, 10"} : null;
+
     return {
       stroke: this.props.chartConfig.color(0.2),
-      strokeDasharray: "5, 10",
+      ...line,
       strokeWidth: 1,
       ...propsForBackgroundLines
     };

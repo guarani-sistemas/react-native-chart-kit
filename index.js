@@ -1,5 +1,5 @@
 import AbstractChart from "./src/abstract-chart";
-import LineChart from "./src/line-chart";
+import {LineChart, LineChartWithTooltips} from "./src/line-chart";
 import BarChart from "./src/bar-chart";
 import PieChart from "./src/pie-chart";
 import ProgressChart from "./src/progress-chart";
@@ -10,6 +10,7 @@ export {
   AbstractChart,
   BarChart,
   LineChart,
+  LineChartWithTooltips,
   PieChart,
   ProgressChart,
   ContributionGraph,
